@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Vijay_Pricecountdown>
+            <version>1.0.0</version>
+        </Vijay_Pricecountdown>
+    </modules> 
+    <frontend>
+        <routers>
+            <vijay_pricecountdown>
+                <use>standard</use>
+                <args>
+                    <module>Vijay_Pricecountdown</module>
+                    <frontName>pricecountdown</frontName>
+                </args>
+            </vijay_pricecountdown>
+        </routers>      
+        <layout>
+            <updates>
+                <vijay_pricecountdown>
+                    <file>vijay/pricecountdown.xml</file>
+                </vijay_pricecountdown>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <pricecountdown>
+                <class>Vijay_Pricecountdown_Block</class>
+            </pricecountdown> 
+        </blocks>
+        <helpers>
+            <vijay_pricecountdown>
+                <class>Vijay_Pricecountdown_Helper</class>
+            </vijay_pricecountdown>
+        </helpers>
+        <models>
+            <pricecountdown>
+                <class>Vijay_Pricecountdown_Model</class>
+            </pricecountdown>
+        </models>
+    </global>
+    <default>
+        <vijay_pricecountdown>
+            <configurations>
+                <enabled>1</enabled>
+                <show_plp>1</show_plp>
+                <show_plp_title>1</show_plp_title>
+                <plp_title>Offers End On:</plp_title>
+                <clock_style_plp>1</clock_style_plp>
+                <show_pdp>1</show_pdp>
+                <show_pdp_title>1</show_pdp_title>
+                <pdp_title>Offers End On:</pdp_title>
+                <clock_style_pdp>1</clock_style_pdp>
+            </configurations>            
+        </vijay_pricecountdown>
+    </default>
+</config>
